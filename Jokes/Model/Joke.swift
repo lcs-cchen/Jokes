@@ -11,7 +11,7 @@ struct Joke: Identifiable{
     let type : String
     let setup: String
     let punchline: String
-    let id: String
+    let id: Int
 }
 
-let examplejoke = Joke(type: "general", setup: "When do doctors get angry?", punchline: "When they run out of patients.", id: 285)
+let exampleJoke = Joke(type: "general", setup: "When do doctors get angry?", punchline: "When they run out of patients.", id: 285)
