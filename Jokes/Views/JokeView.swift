@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct JokeView: View {
+    
+    @State var punchlineOpacity = 0.0
+    
     var body: some View {
+        
         NavigationView{
+            
         VStack{
+            
                 Text("You can see mountain's aren't funny.")
                 .font(.title)
                 .multilineTextAlignment(.center)
+            
             Button(action: {
-                
+                punchlineOpacity = 1.0
             }, label: {
                 Image(systemName: "arrow.down.circle.fill")
                     .resizable()
@@ -23,10 +30,14 @@ struct JokeView: View {
                     .frame(width: 40)
                     .tint(.black)
             })
+            
             Text("They are hill areas")
                 .font(.title)
                 .multilineTextAlignment(.center)
+                .opacity(punchlineOpacity)
+            
             }
+            
         .navigationTitle("Random Jokes")
         }
     }
