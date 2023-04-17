@@ -4,7 +4,7 @@
 //
 //  Created by Cyrus Chen on 14/4/2023.
 //
-
+import Blackbird
 import Foundation
 
 struct Joke: Identifiable, Codable{
