@@ -7,11 +7,11 @@
 import Blackbird
 import Foundation
 
-struct Joke: Identifiable, Codable{
-    let type : String
-    let setup: String
-    let punchline: String
-    let id: Int
+struct Joke: Identifiable, Codable, BlackbirdModel {
+    @BlackbirdColumn var type : String
+    @BlackbirdColumn var setup: String
+    @BlackbirdColumn var punchline: String
+    @BlackbirdColumn var id: Int
 }
 
 let exampleJoke = Joke(type: "general", setup: "When do doctors get angry?", punchline: "When they run out of patients.", id: 285)
