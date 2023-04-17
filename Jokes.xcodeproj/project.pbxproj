@@ -16,6 +16,7 @@
 		6EBAECEE29EDC2D100E6DBC5 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = 6EBAECED29EDC2D100E6DBC5 /* Blackbird */; };
 		6EBAECF029EDC52100E6DBC5 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6EBAECEF29EDC52100E6DBC5 /* db.sqlite */; };
 		6EBAECF429EDCE4A00E6DBC5 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBAECF329EDCE4A00E6DBC5 /* AppDatabase.swift */; };
+		6EBAECF629EDD0D000E6DBC5 /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBAECF529EDD0D000E6DBC5 /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6E72138729E9ABA500B63F76 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6EBAECEF29EDC52100E6DBC5 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		6EBAECF329EDCE4A00E6DBC5 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		6EBAECF529EDD0D000E6DBC5 /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				6E72138129E9A50800B63F76 /* JokeView.swift */,
+				6EBAECF529EDD0D000E6DBC5 /* FavouritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				6E72137329E9A4BE00B63F76 /* JokesApp.swift in Sources */,
 				6E72138829E9ABA500B63F76 /* NetworkService.swift in Sources */,
 				6E72138529E9AA4700B63F76 /* Joke.swift in Sources */,
+				6EBAECF629EDD0D000E6DBC5 /* FavouritesView.swift in Sources */,
 				6EBAECF429EDCE4A00E6DBC5 /* AppDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
