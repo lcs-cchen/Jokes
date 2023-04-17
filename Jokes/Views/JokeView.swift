@@ -73,5 +73,6 @@ struct JokeView: View {
 struct JokeView_Previews: PreviewProvider {
     static var previews: some View {
         JokeView()
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
     }
 }
