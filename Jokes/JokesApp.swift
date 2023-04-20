@@ -11,8 +11,18 @@ import SwiftUI
 struct JokesApp: App {
     var body: some Scene {
         WindowGroup {
-            JokeView()
-                .environment(\.blackbirdDatabase, AppDatabase.instance)
+            TabView{
+                JokeView()
+                    .tabItem{
+                        Label("french",systemImage: "carrot")
+                    }
+                FavouritesView()
+                    .tabItem{
+                        Label("favourites", systemImage: "face.smilling")
+                    }
+                    
+            }
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
         }
     }
 }
