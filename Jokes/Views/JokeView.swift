@@ -14,6 +14,8 @@ struct JokeView: View {
     @State var punchlineOpacity = 0.0
     
     @State var currentJoke: Joke?
+    
+    @State var savedToDatabase = false
     var body: some View {
         
         NavigationView{
@@ -57,6 +59,8 @@ struct JokeView: View {
                             currentJoke = nil
                         }
                         currentJoke = await NetworkService.fetch()
+                        
+                        savedToDatabase = false
                     }
                 }, label: {
                     Text("Fetch another one")
@@ -73,12 +77,14 @@ struct JokeView: View {
                                                currentJoke.type,
                                                currentJoke.setup,
                                                currentJoke.punchline)
+                                savedToDatabase = true
                             }
                         }
                     }
                 }, label: {
                     Text("Save for later")
                 })
+                .disabled(savedToDatabase == true ? true: false)
                 .disabled(punchlineOpacity == 0.0 ? true : false)
                 .tint(.green)
                 .buttonStyle(.borderedProminent)
