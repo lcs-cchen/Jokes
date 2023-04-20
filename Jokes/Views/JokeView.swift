@@ -90,7 +90,7 @@ struct JokeView: View {
                 .buttonStyle(.borderedProminent)
             }
             
-            .navigationTitle("Random Jokes")
+            .navigationTitle("Fresh Jokes")
         }
         .task {
             if currentJoke == nil{
