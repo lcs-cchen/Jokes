@@ -14,7 +14,7 @@ struct FavouritesView: View {
     @BlackbirdLiveModels({ db in
         try await Joke.read(from: db)
     }) var favouriteJokes
-    
+  
     var body: some View {
         NavigationView{
             List(favouriteJokes.results){ currentJoke in
