@@ -30,7 +30,17 @@ struct FavouritesView: View {
 }
 struct FavouritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavouritesView()
+        TabView{
+            JokeView()
+                .tabItem{
+                    Label("french",systemImage: "carrot")
+                }
+            FavouritesView()
+                .tabItem{
+                    Label("favourites", systemImage: "face.smiling")
+                }
+                
+        }
             .environment(\.blackbirdDatabase, AppDatabase.instance)
 
     }

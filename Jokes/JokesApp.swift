@@ -18,7 +18,7 @@ struct JokesApp: App {
                     }
                 FavouritesView()
                     .tabItem{
-                        Label("favourites", systemImage: "face.smilling")
+                        Label("favourites", systemImage: "face.smiling")
                     }
                     
             }
